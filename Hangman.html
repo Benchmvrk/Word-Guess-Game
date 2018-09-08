@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+<style>
+body { background-color: black;
+    font-family: 'Nothing You Could Do', cursive;
+}
+#header-image {
+    width:1084px; 
+    height: 200px;
+    margin: 0px 0px 100px 0px;
+}
+
+
+
+.gameplay1 { //background-color: rgba(10, 3, 3, 0.7);
+    color: rgba(245, 19, 19, 0.616);
+    text-align: center;
+    line-height: 2.1;
+    //border-style: dashed;
+    //border-color: rgba(255, 255, 255, 0.116);
+    //border-radius: 25px;   
+}
+#animal-image{
+    width: 100%;
+    border-radius: 10%;      
+}
+
+#animal-image:hover{
+    opacity: 0.75 ;   
+    transform: scale(1.1);
+    -webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.gameplay > h4:hover{
+   
+    transform: scale(1.1);
+    -webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.gameplay > h1{
+    line-height: 1.5 ;
+    text-decoration: underline ; 
+}
+.gameplay >h1:hover {
+    transform: scale(1);
+    opacity: .1;
+    -webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+    transition: all 1s ease;
+    font-weight: 700%;
+    text-transform: capitalize ;
+}
+
+
+</style>    
+</head>
+
+<body>
+<div class="container">
+
+    <div class="row"></div>
+        <div class= "col-lg-4"></div>
+        <div class= "col-lg-8">
+        <img id="header-image" src= "https://occ-0-901-1001.1.nflxso.net/art/87e01/5694568c69ef4be79164f46b967e7f4c1a387e01.png" />
+    </div>
+                            
+  
+    <div class="row">
+    
+        <div class="col-md-6 gameplay">
+        <img id = "animal-image" src= "https://images3.alphacoders.com/114/thumb-1920-114005.jpg" alt="Animals" />
+        </div>
+    
+        <div class="col-md-6 gameplay gameplay1">
+            <h1>
+                <b>
+                    <i>Guess Any Creatures</i>
+                </b>
+            </h1>
+            <h4>Wins </h4>
+            <h5 id = "total-wins"></h5>
+            <h4>Losses</h4>
+            <h5 id = "total-losses"></h5>
+            <h4>The Word</h4>
+            <h5 id = "display-word"></h5>
+            <h4>Guesses Remaining</h4>
+            <h5 id = "guesses-remain"></h5>
+            <h4>Letters Guessed</h4>
+            <h5 id="letters-guessed"></h5>
+            
+        </div>
+
+    </div>
+
+</div>
+<script src="hangman.js"> </script>
+</body>
+
+</html>
